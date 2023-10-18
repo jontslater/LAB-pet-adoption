@@ -189,7 +189,7 @@ const pets = [
       color: "Brown",
       specialSkill: "Participates in karaoke but does not force others to go out to karaoke.",
       type: "dog",
-      imageUrl: "https://cdn.britannica.com/16/234216-050-C66F8665/beagle-hound-dog.jpg"
+      imageUrl: "http://www.dogbreedplus.com/dog_breeds/images/basset-hound-4.jpg"
     },
     {
       id: 25,
@@ -197,7 +197,7 @@ const pets = [
       color: "Red",
       specialSkill: "Knows the words to 4 rap songs.",
       type: "cat",
-      imageUrl: "https://a-z-animals.com/media/2021/11/Oriental-Shorthair-1-1024x535.jpg"
+      imageUrl: "http://funbk.s3.amazonaws.com/wp-content/uploads/2016/06/funny-cat-video-which-will-make-you-laugh-louder.jpg"
     },
     {
         id: 26,
@@ -237,7 +237,7 @@ const pets = [
       color: "Red",
       specialSkill: "Doesn’t get weirded out by the word “moist.”",
       type: "dino",
-      imageUrl: "https://developer-blogs.nvidia.com/wp-content/uploads/2022/02/AdobeStock_296431397-1.jpg"
+      imageUrl: "http://lsae2.iypcdn.com/static//modules/uploads/photos/language1/dino-live-22.jpg?119"
     }
   ];
 

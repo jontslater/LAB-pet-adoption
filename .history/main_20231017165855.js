@@ -237,7 +237,7 @@ const pets = [
       color: "Red",
       specialSkill: "Doesn’t get weirded out by the word “moist.”",
       type: "dino",
-      imageUrl: "https://developer-blogs.nvidia.com/wp-content/uploads/2022/02/AdobeStock_296431397-1.jpg"
+      imageUrl: "http://lsae2.iypcdn.com/static//modules/uploads/photos/language1/dino-live-22.jpg?119"
     }
   ];
 
