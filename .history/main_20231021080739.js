@@ -241,7 +241,7 @@ const pets = [
     }
   ];
 
-  const renderToDom = (pets) => {
+  const renderToDom = (array) => {
   
   let domString = "";
 
@@ -276,10 +276,10 @@ dogButton.addEventListener('click', ()=>{
   filter("dog")
 })
 
-const filter = () => {
+const filter = (type) => {
   let dogArray = []
   for(pet of pets){
-    if(pet.type === 'dog'){
+    if (pet.type === 'dog'){
       dogArray.push(pet);
     }
   }

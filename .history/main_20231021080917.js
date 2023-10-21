@@ -241,7 +241,7 @@ const pets = [
     }
   ];
 
-  const renderToDom = (pets) => {
+  const renderToDom = (array) => {
   
   let domString = "";
 
