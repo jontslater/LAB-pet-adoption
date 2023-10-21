@@ -245,7 +245,7 @@ const pets = [
   
   let domString = "";
 
-  for(let pet of pets){
+  for(let petbreed of pets){
     
     domString += `<div class="card mb-3" style="max-width: 540px;">
     <div class="row g-0">
@@ -263,25 +263,25 @@ const pets = [
       </div>
     </div>
   </div>`
-  }
-  const app = document.querySelector('#app')
-  app.innerHTML = domString
 }
+  const app = document.querySelector("#app")
+   app.innerHTML = domString;
+  }
 
-renderToDom(pets)
+ 
+  renderToDom(pets)
 
-const dogButton = document.querySelector('#dogss')
+  const dogButton = document.querySelector('#dogss')
 
-dogButton.addEventListener('click', ()=>{
-  filter("dog")
-})
+  const filter = () => {
+    let dogArray = []
 
-const filter = (type) => {
-  let dogArray = []
-  for(pet of pets){
-    if (pet.type === 'dog'){
-      dogArray.push(pet);
+    for(petbreed of pets){
+      if(petbreed.type == "dog" ){
+        dogArray.push(petbreed)
+      }
     }
+   renderToDom(dogArray)  
   }
-  renderToDom(dogArray);
-}
+  
+  dogButton.addEventListener('click', filter)

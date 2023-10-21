@@ -279,7 +279,7 @@ dogButton.addEventListener('click', ()=>{
 const filter = (type) => {
   let dogArray = []
   for(pet of pets){
-    if (pet.type === 'dog'){
+    if (pet.type === type){
       dogArray.push(pet);
     }
   }

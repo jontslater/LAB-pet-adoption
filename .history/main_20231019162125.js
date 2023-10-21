@@ -272,12 +272,9 @@ renderToDom(pets)
 
 const dogButton = document.querySelector('#dogss')
 
-dogButton.addEventListener('click', ()=>{
-  filter("dog")
-})
+const filter = () => {
+  let dogArray = [];
 
-const filter = (type) => {
-  let dogArray = []
   for(pet of pets){
     if (pet.type === 'dog'){
       dogArray.push(pet);
@@ -285,3 +282,5 @@ const filter = (type) => {
   }
   renderToDom(dogArray);
 }
+
+dogButton.addEventListener('click', filter)
