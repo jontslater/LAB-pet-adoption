@@ -307,22 +307,3 @@ const catfilter = () => {
 }
 
 catButton.addEventListener('click', catfilter)
-
-
-const dinoButton = document.querySelector('#dinoss')
-
-dinoButton.addEventListener('click', ()=>{
-  dinofilter("dino")
-})
-
-const dinofilter = () => {
-  let dinoArray = [];
-  for(pet of pets){
-    if(pet.type === 'dino'){
-      dinoArray.push(pet);
-    }
-  }
-  renderToDom(dinoArray);
-}
-
-dinoButton.addEventListener('click', dinofilter)

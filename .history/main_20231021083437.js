@@ -286,9 +286,9 @@ const dogfilter = () => {
   renderToDom(dogArray);
 }
 
-dogButton.addEventListener('click', dogfilter)
+dogButton.addEventListener('click, filter')
 
-
+renderToDom(pets)
 
 const catButton = document.querySelector('#catss')
 
@@ -297,7 +297,7 @@ catButton.addEventListener('click', ()=>{
 })
 
 const catfilter = () => {
-  let catArray = [];
+  let catArray = []
   for(pet of pets){
     if(pet.type === 'cat'){
       catArray.push(pet);
@@ -306,23 +306,4 @@ const catfilter = () => {
   renderToDom(catArray);
 }
 
-catButton.addEventListener('click', catfilter)
-
-
-const dinoButton = document.querySelector('#dinoss')
-
-dinoButton.addEventListener('click', ()=>{
-  dinofilter("dino")
-})
-
-const dinofilter = () => {
-  let dinoArray = [];
-  for(pet of pets){
-    if(pet.type === 'dino'){
-      dinoArray.push(pet);
-    }
-  }
-  renderToDom(dinoArray);
-}
-
-dinoButton.addEventListener('click', dinofilter)
+catButton.addEventListener('click, filter')

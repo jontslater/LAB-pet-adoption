@@ -309,6 +309,8 @@ const catfilter = () => {
 catButton.addEventListener('click', catfilter)
 
 
+
+
 const dinoButton = document.querySelector('#dinoss')
 
 dinoButton.addEventListener('click', ()=>{
