@@ -242,7 +242,6 @@ const pets = [
   ];
 
   const renderToDom = (pets) => {
-
   
   let domString = "";
 
@@ -274,7 +273,7 @@ renderToDom(pets)
 const dogButton = document.querySelector('#dogss')
 const catButton = document.querySelector('#catss')
 const dinoButton = document.querySelector('#dinoss')
-const showAllButton = document.querySelector('#showallss');
+
 
 dogButton.addEventListener('click', ()=>{
   dogfilter("dog")
@@ -322,27 +321,23 @@ const dinofilter = () => {
 dinoButton.addEventListener('click', dinofilter);
 dogButton.addEventListener('click', dogfilter);
 catButton.addEventListener('click', catfilter);
-showAllButton.addEventListener('click', () => {renderToDom(pets);
-});
 
-
-
-const form = document.querySelector('form');
+// const form = document.querySelector('form');
 
 	
-const createPet = (event) => {
-		event.preventDefault();
+// const createPet = (e) => {
+// 		e.preventDefault();
 
-		const newPet = {
-			id: pets.length + 1,
-			name: document.querySelector("#name").value,
-			type: document.querySelector("#type").value,
-      color: document.querySelector("#color").value,
-      specialSkill: document.querySelector("#specialSkill").value,
-		}
-		pets.push(newPet);
-		renderToDom(pets);
-		form.reset();
-	}
+// 		const newPetObj ={
+// 			id: pets.length + 1,
+// 			name: document.querySelector('#petName').value
+// 			type: document.querySelector('#petType').value
+//       color: document.querySelector('#petColor').value
+//       specialSkill: document.querySelector('#petSpecialSkill').value
+// 		}
+// 		pies.push(newPetObj)
+// 		renderToDom(pets)
+// 		form.reset()
+// 	}
 			
-	form.addEventListener('submit', createPet);
+// 	form.addeventlistener('submit', createPet )

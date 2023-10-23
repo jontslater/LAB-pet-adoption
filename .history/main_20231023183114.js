@@ -322,7 +322,7 @@ const dinofilter = () => {
 dinoButton.addEventListener('click', dinofilter);
 dogButton.addEventListener('click', dogfilter);
 catButton.addEventListener('click', catfilter);
-showAllButton.addEventListener('click', () => {renderToDom(pets);
+showAllButton.addEventListener('click', () => {displayCards(pets);
 });
 
 

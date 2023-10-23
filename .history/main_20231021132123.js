@@ -274,7 +274,7 @@ renderToDom(pets)
 const dogButton = document.querySelector('#dogss')
 const catButton = document.querySelector('#catss')
 const dinoButton = document.querySelector('#dinoss')
-const showAllButton = document.querySelector('#showallss');
+
 
 dogButton.addEventListener('click', ()=>{
   dogfilter("dog")
@@ -322,16 +322,12 @@ const dinofilter = () => {
 dinoButton.addEventListener('click', dinofilter);
 dogButton.addEventListener('click', dogfilter);
 catButton.addEventListener('click', catfilter);
-showAllButton.addEventListener('click', () => {renderToDom(pets);
-});
-
-
 
 const form = document.querySelector('form');
 
 	
-const createPet = (event) => {
-		event.preventDefault();
+const createPet = (e) => {
+		e.preventDefault();
 
 		const newPet = {
 			id: pets.length + 1,
@@ -345,4 +341,4 @@ const createPet = (event) => {
 		form.reset();
 	}
 			
-	form.addEventListener('submit', createPet);
+	form.addEventListener('submit', createPet )

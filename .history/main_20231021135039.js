@@ -274,7 +274,7 @@ renderToDom(pets)
 const dogButton = document.querySelector('#dogss')
 const catButton = document.querySelector('#catss')
 const dinoButton = document.querySelector('#dinoss')
-const showAllButton = document.querySelector('#showallss');
+
 
 dogButton.addEventListener('click', ()=>{
   dogfilter("dog")
@@ -318,14 +318,20 @@ const dinofilter = () => {
   renderToDom(dinoArray);
 }
 
+const ShowAllfilter = () => {
+  let pets = [];
+  for(pet of pets){
+    if(pet.type === pets){
+      pet.push(pets);
+    }
+  }
+  renderToDom(pets);
+}
+
 
 dinoButton.addEventListener('click', dinofilter);
 dogButton.addEventListener('click', dogfilter);
 catButton.addEventListener('click', catfilter);
-showAllButton.addEventListener('click', () => {renderToDom(pets);
-});
-
-
 
 const form = document.querySelector('form');
 
