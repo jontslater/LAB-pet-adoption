@@ -251,15 +251,16 @@ const pets = [
     domString += `<div class="card mb-3" style="max-width: 540px;">
     <div class="row g-0">
       <div class="col-md-4">
-        <button type="button" class="btndelete" id="delete--${pet.id}" "btn-danger">Delete</button>
         <img src="${pet.imageUrl}" class="img-fluid rounded-start" alt="...">
+        <button type="button" class="btn btn-danger">Delete</button>
       </div>
       <div class="col-md-8">
         <div class="card-body">
           <h4 class="card-title">${pet.name}</h4>
+          <h5 class="card-title">${pet.type}</h5>
           <h6 class="card-title">${pet.color}</h6>
-          <p class="card-title">${pet.specialSkill}.</p>
-          <footer><h5 class="card-footer">${pet.type}</h5></footer>
+          <p class="card-text">${pet.specialSkill}.</p>
+          <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
         </div>
       </div>
     </div>
@@ -343,22 +344,23 @@ const createPet = (event) => {
 		pets.push(newPet);
 		renderToDom(pets);
 		form.reset();
+    console.log("is this working")
 	}
   form.addEventListener('submit', createPet);
   
   
   const app = document.querySelector("#app");
   
-  app.addEventListener('click', (event) => {
-    if (event.target.id.includes("delete")) {
-      const [ , id] = event.target.id.split("--");
-      const index = pets.findIndex(event => event.id === Number(id));
+  app.addEventListener('click', (event) =>{
+    if(event.target.id.includes("delete")){
+      const [, id] = event.target.id.split("--");
+      const index = team.findIndex(event => event.id === Number(id));
       pets.splice(index, 1);
       renderToDom(pets);
-    };
+    }
   });
 
-  const startApp = () => {;
+  const startApp = () => {
     renderToDom(pets);
   }
   

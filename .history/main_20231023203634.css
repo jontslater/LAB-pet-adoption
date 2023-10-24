@@ -35,3 +35,7 @@ body{
   background-color:aquamarine;
   border-radius: 1px;
 }
+
+.row{
+  height: 170px;
+}

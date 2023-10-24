@@ -251,15 +251,15 @@ const pets = [
     domString += `<div class="card mb-3" style="max-width: 540px;">
     <div class="row g-0">
       <div class="col-md-4">
-        <button type="button" class="btndelete" id="delete--${pet.id}" "btn-danger">Delete</button>
         <img src="${pet.imageUrl}" class="img-fluid rounded-start" alt="...">
+        <button type="button" class="btn" id="delete--${pet.id}" btn-danger">Delete</button>
       </div>
       <div class="col-md-8">
         <div class="card-body">
           <h4 class="card-title">${pet.name}</h4>
+          <h5 class="card-title">${pet.type}</h5>
           <h6 class="card-title">${pet.color}</h6>
-          <p class="card-title">${pet.specialSkill}.</p>
-          <footer><h5 class="card-footer">${pet.type}</h5></footer>
+          <p class="card-text">${pet.specialSkill}.</p>
         </div>
       </div>
     </div>
