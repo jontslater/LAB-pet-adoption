@@ -23,6 +23,7 @@ body{
   margin-left: 15px;
   margin-right: 15px;
   border: 1px solid black;
+  margin-bottom: 5px;
 }
 
 .btn-primary {
@@ -45,8 +46,6 @@ body{
 .img-fluid{
   margin-top: 5px;
   margin-left: 2px;
-  border: 1px solid black;
-  border-radius: 100px;
 }
 
 #app{

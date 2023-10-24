@@ -256,7 +256,7 @@ const pets = [
       </div>
       <div class="col-md-8">
         <div class="card-body">
-          <h2 class="card-title">${pet.name}</h2>
+          <header><h4 class="card-header card-footer">${pet.name}</h4></header>
           <h6 class="card-title">${pet.color}</h6>
           <p class="card-title">${pet.specialSkill}.</p>
           <footer><h5 class="card-footer">${pet.type}</h5></footer>

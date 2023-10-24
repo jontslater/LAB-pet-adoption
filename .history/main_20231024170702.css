@@ -40,13 +40,15 @@ body{
 .card-footer{
   background-color:aquamarine;
   border-radius: 10px;
+  border: solid black;
+  border: 1px;
+  border-top: 1px;
+  border-top-style: solid;
 }
 
 .img-fluid{
   margin-top: 5px;
   margin-left: 2px;
-  border: 1px solid black;
-  border-radius: 100px;
 }
 
 #app{
