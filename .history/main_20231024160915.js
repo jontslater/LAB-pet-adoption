@@ -248,7 +248,7 @@ const pets = [
 
   for(let pet of pets){
     
-    domString += `<div class="card mb-3">
+    domString += `<table><div class="card mb-3" style="max-width: 540px;">
     <div class="row g-0">
       <div class="col-md-4">
         <button type="button" class="btndelete" id="delete--${pet.id}" "btn-danger">Delete</button>
@@ -263,7 +263,7 @@ const pets = [
         </div>
       </div>
     </div>
-  </div>`
+  </div></table>`
   }
   const app = document.querySelector('#app')
   app.innerHTML = domString

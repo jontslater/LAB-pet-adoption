@@ -1,16 +1,13 @@
 body{
-  background-color: cadetblue;
+  background-color: black;
 }
 
 .btn{
-  background-color: coral;
-  border: 1px solid black;
+  background-color:rgb(255, 252, 252);
 }
 
 .form-control{
   width: 400px;
-  border: 1px solid black;
-  border-radius: 10px;
 }
 
 .form-label{
@@ -22,12 +19,10 @@ body{
   width: 400px;
   margin-left: auto;
   margin-right: auto;
-  border: 1px solid black;
 }
 
 .btn-primary {
   background-color: blue;
-  margin-bottom: 5px;
 }
 
 .btndelete{
@@ -42,6 +37,7 @@ body{
 
 .img-fluid{
   margin-top: 5px;
+  size: auto;
 }
 
 #app{

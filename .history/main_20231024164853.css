@@ -4,7 +4,7 @@ body{
 
 .btn{
   background-color: coral;
-  border: 1px solid black;
+  border: 2px solid black;
 }
 
 .form-control{
@@ -22,12 +22,10 @@ body{
   width: 400px;
   margin-left: auto;
   margin-right: auto;
-  border: 1px solid black;
 }
 
 .btn-primary {
   background-color: blue;
-  margin-bottom: 5px;
 }
 
 .btndelete{

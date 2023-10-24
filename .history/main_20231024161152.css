@@ -1,16 +1,13 @@
 body{
-  background-color: cadetblue;
+  background-color: black;
 }
 
 .btn{
-  background-color: coral;
-  border: 1px solid black;
+  background-color:rgb(255, 252, 252);
 }
 
 .form-control{
   width: 400px;
-  border: 1px solid black;
-  border-radius: 10px;
 }
 
 .form-label{
@@ -20,14 +17,10 @@ body{
 .card{
   margin-top: 10px;
   width: 400px;
-  margin-left: auto;
-  margin-right: auto;
-  border: 1px solid black;
 }
 
 .btn-primary {
   background-color: blue;
-  margin-bottom: 5px;
 }
 
 .btndelete{
@@ -35,16 +28,19 @@ body{
   background-color:crimson
 }
 
+.img-fluid{
+  margin-top: 4px;
+}
+
 .card-footer{
   background-color:aquamarine;
   border-radius: 1px;
 }
 
-.img-fluid{
-  margin-top: 5px;
-}
-
-#app{
+.card{
   display: flex;
-  flex-flow: row wrap;
+  height: 80%;
+  justify-content: stretch;
+  align-items: center;
+  flex-wrap: wrap;
 }

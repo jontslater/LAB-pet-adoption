@@ -248,7 +248,7 @@ const pets = [
 
   for(let pet of pets){
     
-    domString += `<div class="card mb-3">
+    domString += `<div class="container<div class="card mb-3" style="max-width: 540px;">
     <div class="row g-0">
       <div class="col-md-4">
         <button type="button" class="btndelete" id="delete--${pet.id}" "btn-danger">Delete</button>
