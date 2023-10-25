@@ -276,35 +276,48 @@ const catButton = document.querySelector('#catss')
 const dinoButton = document.querySelector('#dinoss')
 const showAllButton = document.querySelector('#showallss');
 
-  const filter = () => {
-  let catArray = [];
-  let dogArray = [];
-  let dinoArray = [];
-  for(pet of pets){
-    if(pet.type === 'cat'){
-      catArray.push(pet);
-    }if(pet.type === 'dog'){
-      dogArray.push(pet);
-    } if(pet.type === 'dino'){
-      dinoArray.push(pet);
-    }
-  }
-  
-  renderToDom(dinoArray);
-  renderToDom(catArray);
-  renderToDom(dogArray);
-}
-
 dogButton.addEventListener('click', ()=>{
   dogfilter("dog")
 })
+
+const dogfilter = () => {
+  let dogArray = []
+  for(pet of pets){
+    if(pet.type === 'dog'){
+      dogArray.push(pet);
+    }
+  }
+  renderToDom(dogArray);
+}
+
 catButton.addEventListener('click', ()=>{
   catfilter("cat")
 })
 
+const catfilter = () => {
+  let catArray = [];
+  for(pet of pets){
+    if(pet.type === 'cat'){
+      catArray.push(pet);
+    }
+  }
+  renderToDom(catArray);
+}
+
 dinoButton.addEventListener('click', ()=>{
   dinofilter("dino")
 })
+
+const dinofilter = () => {
+  let dinoArray = [];
+  for(pet of pets){
+    if(pet.type === 'dino'){
+      dinoArray.push(pet);
+    }
+  }
+  renderToDom(dinoArray);
+}
+
 
 dinoButton.addEventListener('click', dinofilter);
 dogButton.addEventListener('click', dogfilter);
@@ -313,48 +326,35 @@ showAllButton.addEventListener('click', () => {renderToDom(pets);
 });
 
 
+
 const form = document.querySelector('form');
 
-	
-const createPet = (event) => {
-		event.preventDefault();
-
-		const newPet = {
-			id: pets.length + 1,
-			name: document.querySelector("#name").value,
-			type: document.querySelector("#type").value,
-      color: document.querySelector("#color").value,
-      specialSkill: document.querySelector("#specialSkill").value,
-		}
-		pets.push(newPet);
-		renderToDom(pets);
-		form.reset();
-	}
-
-  form.addEventListener('submit', createPet)
-  
-  
-  
-  const app = document.querySelector("#app");
-  
-  app.addEventListener('click', (event) => {
-    if (event.target.id.includes("delete")) {
-      const [ , id] = event.target.id.split("--");
-      const index = pets.findIndex(event => event.id === Number(id));
-      pets.splice(index, 1);
-      renderToDom(pets);
-    };
-  });
+ 
 
   
-  // const events = () => {
+  const events = () => {
+    
+    const app = document.querySelector("#app");
+  
+    app.addEventListener('click', (event) => {
+      if (event.target.id.includes("delete")) {
+        const [ , id] = event.target.id.split("--");
+        const index = pets.findIndex(event => event.id === Number(id));
+        pets.splice(index, 1);
+        renderToDom(pets);
+      };
+    });
 
 
-  // }
+    
+    
 
-  // const startApp = () => {;
-  //   renderToDom(pets);
-  //   events()
-  // }
 
-  // startApp()
+  }
+
+  const startApp = () => {;
+    renderToDom(pets);
+    events()
+  }
+
+  startApp()

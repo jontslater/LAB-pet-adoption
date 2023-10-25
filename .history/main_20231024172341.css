@@ -17,7 +17,8 @@ body{
   color: white;
   display: flex;
   flex-flow: row wrap;
-  flex-wrap: wrap;
+  width: 1300px;
+  position: absolute;
 
 }
 

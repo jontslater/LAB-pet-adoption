@@ -17,7 +17,6 @@ body{
   color: white;
   display: flex;
   flex-flow: row wrap;
-  flex-wrap: wrap;
 
 }
 
