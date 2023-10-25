@@ -241,9 +241,7 @@ const pets = [
     }
   ];
 
-const app = document.querySelector("#app");
-  
-const renderToDom = (pets) => {
+  const renderToDom = (pets) => {
 
   
   let domString = "";
@@ -273,43 +271,66 @@ const renderToDom = (pets) => {
 
 renderToDom(pets)
 
-const dogButton = document.querySelector('#dog')
-const catButton = document.querySelector('#cat')
-const dinoButton = document.querySelector('#dino')
+const dogButton = document.querySelector('#dogss')
+const catButton = document.querySelector('#catss')
+const dinoButton = document.querySelector('#dinoss')
 const showAllButton = document.querySelector('#showallss');
 
-  const filter = (petType) => {
+  const filter = () => {
   let petArray = [];
   for(pet of pets){
-    if(pet.type === petType){
+    if(pet.type === "cat"){
       petArray.push(pet);
+    }else if (pet.type === "dog"){
+      petArray.push(pet);
+    }else if(pet.type === "dino"){
+      petArray.push(pet);
+    }
   }
- } 
- renderToDom(petArray);
-}
   
-const typebuttons = document.querySelector("#typebuttons");
-typebuttons.addEventListener('click', (event) => {
-  const id = event.target.id;
-    if(id === "showall") {
-      renderToDom(pets);
-    } else if(id === "dog" || id === "cat" || id === "dino"){
+  renderToDom(petArray);
+}
+
+document.addEventListener("click", event =>{
+  if(event.target.id.includes("dog" || "cat" || "dino")) { 
+    const id = event.target.id
     filter(id)
   }
 })
 
-app.addEventListener('click', (event) => {
+// const dogbutton = document.createElement("dog")
+// document.body.append(dogbutton)
+//   dogfilter("dog")
+// })
+// catButton.addEventListener('click', ()=>{
+//   catfilter("cat")
+// })
+
+// dinoButton.addEventListener('click', ()=>{
+//   dinofilter("dino")
+// })
+
+  app.addEventListener('click', (event) => {
     if (event.target.id.includes("delete")) {
       const [ , id] = event.target.id.split("--");
       const index = pets.findIndex(event => event.id === Number(id));
       pets.splice(index, 1);
       renderToDom(pets);
-    }
+    };
   });
+
+  dinoButton.addEventListener('click', dinofilter);
+dogButton.addEventListener('click', dogfilter);
+catButton.addEventListener('click', catfilter);
+showAllButton.addEventListener('click', () => {renderToDom(pets);
+});
+
+
+
 
 const form = document.querySelector('form');
 
-
+	
 const createPet = (event) => {
 		event.preventDefault();
 
@@ -323,13 +344,13 @@ const createPet = (event) => {
 		pets.push(newPet);
 		renderToDom(pets);
 		form.reset();
-    console.log("is this working?")
 	}
-form.addEventListener('submit', createPet)
+
+  form.addEventListener('submit', createPet)
   
   
   
-  
+  const app = document.querySelector("#app");
   
 
 

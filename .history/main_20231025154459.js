@@ -241,9 +241,7 @@ const pets = [
     }
   ];
 
-const app = document.querySelector("#app");
-  
-const renderToDom = (pets) => {
+  const renderToDom = (pets) => {
 
   
   let domString = "";
@@ -309,7 +307,7 @@ app.addEventListener('click', (event) => {
 
 const form = document.querySelector('form');
 
-
+form.addEventListener('submit', createPet)
 const createPet = (event) => {
 		event.preventDefault();
 
@@ -325,11 +323,11 @@ const createPet = (event) => {
 		form.reset();
     console.log("is this working?")
 	}
-form.addEventListener('submit', createPet)
+
   
   
   
-  
+  const app = document.querySelector("#app");
   
 
 

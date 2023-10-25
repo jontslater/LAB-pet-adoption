@@ -241,9 +241,7 @@ const pets = [
     }
   ];
 
-const app = document.querySelector("#app");
-  
-const renderToDom = (pets) => {
+  const renderToDom = (pets) => {
 
   
   let domString = "";
@@ -298,18 +296,24 @@ typebuttons.addEventListener('click', (event) => {
   }
 })
 
+  
 app.addEventListener('click', (event) => {
     if (event.target.id.includes("delete")) {
       const [ , id] = event.target.id.split("--");
       const index = pets.findIndex(event => event.id === Number(id));
       pets.splice(index, 1);
       renderToDom(pets);
-    }
+    };
   });
+  
+
+// showAllButton.addEventListener('click', () => {renderToDom(pets);
+// });
+
 
 const form = document.querySelector('form');
 
-
+	
 const createPet = (event) => {
 		event.preventDefault();
 
@@ -323,13 +327,13 @@ const createPet = (event) => {
 		pets.push(newPet);
 		renderToDom(pets);
 		form.reset();
-    console.log("is this working?")
 	}
-form.addEventListener('submit', createPet)
+
+  form.addEventListener('submit', createPet)
   
   
   
-  
+  const app = document.querySelector("#app");
   
 
 

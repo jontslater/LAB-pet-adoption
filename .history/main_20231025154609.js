@@ -240,7 +240,7 @@ const pets = [
       imageUrl: "https://developer-blogs.nvidia.com/wp-content/uploads/2022/02/AdobeStock_296431397-1.jpg"
     }
   ];
-
+  
 const app = document.querySelector("#app");
   
 const renderToDom = (pets) => {
@@ -309,7 +309,7 @@ app.addEventListener('click', (event) => {
 
 const form = document.querySelector('form');
 
-
+form.addEventListener('submit', createPet)
 const createPet = (event) => {
 		event.preventDefault();
 
@@ -325,7 +325,7 @@ const createPet = (event) => {
 		form.reset();
     console.log("is this working?")
 	}
-form.addEventListener('submit', createPet)
+
   
   
   
