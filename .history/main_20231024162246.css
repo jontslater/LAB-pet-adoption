@@ -1,0 +1,45 @@
+body{
+  background-color: black;
+}
+
+.btn{
+  background-color:rgb(255, 252, 252);
+}
+
+.form-control{
+  width: 400px;
+}
+
+.form-label{
+  color: white;
+}
+
+.card{
+  margin-top: 10px;
+  width: 400px;
+}
+
+.btn-primary {
+  background-color: blue;
+}
+
+.btndelete{
+  border-radius: 1px;
+  background-color:crimson
+}
+
+.card-footer{
+  background-color:aquamarine;
+  border-radius: 1px;
+}
+
+.img-fluid{
+  margin-top: 5px;
+}
+
+.row{
+  width: auto;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  justify-content: left;
+}

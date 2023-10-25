@@ -1,0 +1,15 @@
+body{
+  background-color: black;
+}
+
+.btn{
+  background-color:rgb(255, 252, 252);
+}
+
+.form-control{
+  width: 400px;
+}
+
+.form-label{
+  color: white;
+}

@@ -1,0 +1,54 @@
+body{
+  background-color: cadetblue;
+}
+
+.btn{
+  background-color: coral;
+  border: 1px solid black;
+}
+
+.form-control{
+  width: 400px;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+.form-label{
+  color: white;
+}
+
+.card{
+  margin-top: 10px;
+  width: 400px;
+  margin-left: 15px;
+  margin-right: 15px;
+  border: 1px solid black;
+}
+
+.btn-primary {
+  background-color: blue;
+  margin-bottom: 5px;
+}
+
+.btndelete{
+  border-radius: 1px;
+  background-color:crimson
+}
+
+.card-footer{
+  background-color:aquamarine;
+  border-radius: 1px;
+}
+
+.img-fluid{
+  margin-top: 5px;
+}
+
+#app{
+  display: flex;
+  flex-flow: row wrap;
+  width: 1300px;
+  position: absolute;
+  right: 150px;
+  height: 120px;
+}

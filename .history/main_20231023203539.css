@@ -1,0 +1,43 @@
+body{
+  background-color: black;
+}
+
+.btn{
+  background-color:rgb(255, 252, 252);
+}
+
+.form-control{
+  width: 400px;
+}
+
+.form-label{
+  color: white;
+}
+
+.card{
+  width: 400px;
+}
+
+.btn-primary {
+  background-color: blue;
+}
+
+.btndelete{
+  border-radius: 1px;
+  background-color:crimson
+}
+
+.img-fluid{
+  margin-top: 4px;
+}
+
+.card-footer{
+  background-color:aquamarine;
+  height: 35px;
+  border-radius: 1px;
+  margin-top: 30px;
+}
+
+.row{
+  height: 50px;
+}
